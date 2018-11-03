@@ -2,9 +2,10 @@ module.exports = {
     title: 'Blix',
     description: 'Create, automate, and enhance Javascript applications',
     themeConfig: {
+        logo: 'logo.png',
         repo: 'blixjs/blix',
         repoLabel: 'Github',
-        docsRepo: 'blixjs/docs',
+        docsRepo: 'blixjs/blixjs.com',
         editLinks: true,
         editLinkText: 'Edit this page on Github',
         nav: [
@@ -17,7 +18,8 @@ module.exports = {
                 items: [
                   { text: 'Roadmap', link: '/about/roadmap' },
                   { text: 'About', link: '/about/' },
-                  { text: 'Team', link: '/about/team' }
+                  { text: 'Team', link: '/about/team' },
+                  { text: 'Contributing', link: '/about/contributing' }
                 ]
             }
         ],
@@ -29,7 +31,8 @@ module.exports = {
             '/about/': [
                 '',
                 'team',
-                'roadmap'
+                'roadmap',
+                'contributing'
             ],
             '/': [
                 '/guide/installation',
