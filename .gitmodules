@@ -1,0 +1,3 @@
+[submodule ".vuepress/dist"]
+  path = .vuepress/dist
+  url = https://github.com/blixjs/blixjs.com.git
