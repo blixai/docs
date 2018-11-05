@@ -10,16 +10,16 @@ yarn build
 cd .vuepress/dist
 
 # if you are deploying to a custom domain
-# echo 'www.example.com' > CNAME
+echo 'www.blixjs.com' > CNAME
 
 git init
 git add -A
 git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io
-git push -f git@github.com:blixjs/blixjs.github.io.git master
+# git push -f git@github.com:blixjs/blixjs.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:blixjs/blixjs.com.git master:gh-pages
+git push -f git@github.com:blixjs/compiled_website.git master
 
 cd -
