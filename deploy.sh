@@ -13,6 +13,8 @@ cd .vuepress/dist
 echo 'www.blixjs.com' > CNAME
 
 git init
+git config user.name "Devon Bull"
+git config user.email "devjbull@gmail.com"
 git add -A
 git commit -m 'deploy'
 
@@ -20,6 +22,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:blixjs/blixjs.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:blixjs/compiled_website.git master
+git push -f https://github.com/blixjs/blixjs.com.git master:gh-pages
 
 cd -
