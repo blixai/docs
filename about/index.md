@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # About
 
 > I want to build a car that’s faster than all of them - Enzo Ferrari

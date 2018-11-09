@@ -10,6 +10,7 @@ module.exports = {
         repoLabel: 'Github',
         docsRepo: 'blixjs/blixjs.com',
         editLinks: true,
+        lastUpdated: 'Last Updated',
         editLinkText: 'Edit this page on Github',
         nav: [
             {
