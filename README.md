@@ -5,11 +5,11 @@ actionText: Get Started →
 actionLink: /guide/
 features:
 - title: Simplicity First
-  details: Minimal setup with markdown-centered project structure helps you focus on writing.
-- title: Pure JavaScript
-  details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
+  details: Minimal setups with the ability to add tools on the fly. Select what you need and automate common actions with powerful generator scripts.
+- title: Pure Javascript
+  details: Lightweight, unit tested, with minimal dependencies. This bad boy is ready to rock and roll.
 - title: Production Ready
-  details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
+  details: Blix generates dozens of projects using industry best practices and is ready for production with no fuss.
 footer: MIT Licensed | Copyright © 2017 - Present Devon Bull
 ---
 

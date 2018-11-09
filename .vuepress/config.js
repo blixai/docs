@@ -3,7 +3,7 @@ module.exports = {
     head: [
       ['link', { rel: 'icon', href: 'logo.png' }]
     ], 
-    description: 'Create, automate, and enhance Javascript applications',
+    description: 'CLI tool to create, automate, and enhance JavaScript applications',
     themeConfig: {
         logo: 'logo.png',
         repo: 'blixjs/blix',
