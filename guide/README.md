@@ -24,7 +24,6 @@ You will then be prompted on what you need for your new project.
 
 For more in-depth walkthroughs check out these quick start examples on our website:
 
-[New React/Redux Project](https://blixjs.com/quick-start-examples/new-react-redux-project)
+[New React/Redux Project](/guide/examples/default-project.html)
 
-
-[Add Redux/React-Router to Create-React-App](https://blixjs.com/quick-start-examples/create-new-react-react-router-redux-project)
+[Add Redux/React-Router to Create-React-App](/guide/examples/add-redux-and-react-router-to-create-react-app.html)
