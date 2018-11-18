@@ -1,4 +1,5 @@
 # Create a new default project
+> Speed is the essence of war - Sun Tzu
 
 When creating a new project you'll have the option to configure it yourself or use a default. 
 Currently our default option is a React, React-Router, Redux frontend paired with Express, MongoDB and Mongoose for the backend.

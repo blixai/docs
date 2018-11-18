@@ -12,10 +12,22 @@ module.exports = {
         editLinks: true,
         lastUpdated: 'Last Updated',
         editLinkText: 'Edit this page on Github',
+        activeHeaderLinks: false,
+        sidebarDepth: 0,
         nav: [
             {
                 text: 'Guide',
                 link: '/guide/'
+            },
+            {
+              text: 'Commands',
+              items: [
+                { text: 'new', link: '/commands/new' },
+                { text: 'add', link: '/commands/add' },
+                { text: 'scripts', link: '/commands/scripts' },
+                { text: 'generate', link: '/commands/generate' },
+                { text: 'help', link: '/commands/help' }
+              ]
             },
             {
                 text: 'About',
@@ -34,29 +46,33 @@ module.exports = {
                 'roadmap',
                 'contributing'
             ],
+            '/commands/': [
+                'new',
+                'add',
+                'scripts',
+                'generate',
+                'help'
+            ],
             '/': [
-                '/guide/installation',
                 '/guide/',
+                '/guide/installation',
                 {
-                  title: 'Quick Start Examples',
+                  title: 'Basics',
+                  collapsable: false,
+                  children: [
+                    ['/guide/basics/project-configuration', 'Project Configuration'],
+                    ['/guide/basics/assets', 'Assets'],
+                    ['/guide/basics/deploying', 'Deploying']
+                  ]
+                },
+                {
+                  title: 'Walkthroughs',
                   collapsable: false,
                   children: [
                     ['/guide/examples/default-project', 'Create a default Project'],
                     ['/guide/examples/add-redux-and-react-router-to-create-react-app', 'Add Redux/React-Router to CRA']
                   ]
                 },
-                {
-                  title: 'Commands',
-                  collapsable: false,
-                  children: [
-                    '/guide/commands/new',
-                    '/guide/commands/add',
-                    '/guide/commands/scripts',
-                    '/guide/commands/generate',
-                    '/guide/commands/help'
-                  ]
-                }, 
-                '/guide/deploying'
               ],
         }
       },

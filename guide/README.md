@@ -1,4 +1,5 @@
-# What is Blix?
+# Overview
+> An elegant weapon for a more civilized age. - Obi-Wan Kenobi
 
 Blix is a **command line tool** for Javascript applications. It can be used to create projects from scratch or integrate new features and tools into existing applications. Blix works to provide a pleasant, rapid development experience by leveraging **convention + configuration**. 
 
@@ -22,7 +23,7 @@ npx blix new my-project
 
 You will then be prompted on what you need for your new project. 
 
-For more in-depth walkthroughs check out these quick start examples on our website:
+For more in-depth walkthroughs check out these quick start examples:
 
 [New React/Redux Project](/guide/examples/default-project.html)
 

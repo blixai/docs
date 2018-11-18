@@ -1,9 +1,10 @@
 # Installation
+> Dread it. Run from it. Destiny still arrives - Thanos
 
 ## Try it out
 If you wish to try Blix out without installing we recommend [using npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b). Run our help command to see a list of commands you can play with.
 
-```shell
+```
 npx blix help  
 ```
 
@@ -12,7 +13,7 @@ npx blix help
 
 Blix is a cli tool and needs to be installed globally using your package manager of choice.
 
-```shell
+```
 npm install -g blix
 # OR
 yarn add blix global
