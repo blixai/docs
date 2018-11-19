@@ -12,4 +12,3 @@ features:
   details: Blix generates dozens of projects using industry best practices and is ready for production with no fuss.
 footer: MIT Licensed | Copyright © 2017 - Present Devon Bull
 ---
-
