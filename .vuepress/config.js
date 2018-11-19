@@ -60,7 +60,7 @@ module.exports = {
                   title: 'Basics',
                   collapsable: false,
                   children: [
-                    ['/guide/basics/project-configuration', 'Project Configuration'],
+                    ['/guide/basics/project-configuration', 'Project Configurations'],
                     ['/guide/basics/assets', 'Assets'],
                     ['/guide/basics/deploying', 'Deploying']
                   ]
