@@ -5,20 +5,25 @@
 If you wish to try Blix out without installing we recommend [using npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b). Run our help command to see a list of commands you can play with.
 
 ```
-npx blix help  
+npx blix@next help  
 ```
 
 
 ## Global Installation
 
-Blix is a cli tool and needs to be installed globally using your package manager of choice.
+Blix is a cli tool and needs to be installed globally using your package manager of choice. 
 
-```
+```bash
 npm install -g blix
 # OR
 yarn add blix global
 ```
 
-## Coming Soon: blix@next
+## Use the latest features with blix@next
+We can't guarantee stability but our testing process helps us catch errors before they make it to here.
+```bash
+npm install -g blix@next
+# OR
+yarn add blix@next global
+```
 
-Currently we're testing the heck out of Blix to make sure it works like a charm when it gets to you. Due to this there are currently slick features unavailable unless you clone the repo. We are working towards a solution where we have a weekly build that we push to a @next package version. In the meantime we're sorry for the inconvience!

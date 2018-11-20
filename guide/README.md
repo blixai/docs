@@ -5,7 +5,7 @@ Blix is a **command line tool** for Javascript applications. It can be used to c
 
 ## Blix commands: 
 ```
-  blix new <projectName>
+  blix new
   blix add
   blix scripts
   blix generate | g
@@ -18,7 +18,7 @@ Blix is a **command line tool** for Javascript applications. It can be used to c
 To run Blix without installing it you can use [npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) to try it out!
 
 ```
-npx blix new my-project 
+npx blix@next new
 ```
 
 You will then be prompted on what you need for your new project. 
