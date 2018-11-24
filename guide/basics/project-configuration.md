@@ -8,7 +8,7 @@ Within the ```src``` folder there are common that may have additionally director
 a ```src/reducers``` directory while a project without a state management solution won't.
 
 Here's a look at the consistent files/folders that will be built regardless of frontend type
-```
+```bash
 |── src
     |── api
     |── components
@@ -22,8 +22,8 @@ Here's a look at the consistent files/folders that will be built regardless of f
 Projects that use packages like ```react-router``` or ```vue-router``` have a ```views``` folder within ```src```.
 We find that instead of having a component from within the ```src/components``` folder it tends to be much cleaner to use a component as a "view" and import the components, styling, and services you need for that page.
 
-***Views Example***:
-```
+***Views Example***
+```bash
 |── src
     |── views
         |── Home.js
@@ -36,7 +36,7 @@ We find that instead of having a component from within the ```src/components``` 
 For React with Redux projects the src folder contain ```actions``` and ```reducers``` directories along with a ```configStore.js``` file. 
 
 ***Redux Example***
-```
+```bash
 |── src
     |── actions
         |── index.js
@@ -48,6 +48,23 @@ For React with Redux projects the src folder contain ```actions``` and ```reduce
 
 ## Backend
 
-All backends follow the MVC pattern.
+All backends follow the MVC pattern and currently only use Express. If you're familiar with Ruby on Rails this will be immediately familiar.
+
+***Backend Example***
+```bash
+|── server
+    |── controllers
+    |── helpers
+    |── models
+    |── views 
+    |── routes.js
+    |── server.js
+```
+
+All routes are stored in the ```routes.js``` file for ease of lookup. The ```helpers``` folder is perfect for things like authentication handlers. 
+For applications with client side routing it would be best to make an endpoint for each route server side. So if you're in a project that serves a frontend
+you should see a index.html file in ```views``` under a folder: ```home``` and a route ```r.get('/', Home.index)``` in ```routes.js```. To make a new page route use: ```r.get('/page', Home.index)```.
+This will serve the index.html which calls the JS file with the routing library which will load to the JS "page" you need. This will help prevent unnecessary 404's.
 
 ## Common Folders
+
