@@ -3,7 +3,6 @@ module.exports = {
     head: [
       ['link', { rel: 'icon', href: 'logo.png' }]
     ], 
-    plugins: {'@vuepress/google-analytics': { ga: 'UA-44025146-6' } }, 
     description: 'CLI tool to create, automate, and enhance JavaScript applications',
     themeConfig: {
         logo: 'logo.png',
@@ -26,8 +25,7 @@ module.exports = {
                 { text: 'new', link: '/commands/new' },
                 { text: 'add', link: '/commands/add' },
                 { text: 'scripts', link: '/commands/scripts' },
-                { text: 'generate', link: '/commands/generate' },
-                { text: 'help', link: '/commands/help' }
+                { text: 'generate', link: '/commands/generate' }
               ]
             },
             {
@@ -51,8 +49,7 @@ module.exports = {
                 'new',
                 'add',
                 'scripts',
-                'generate',
-                'help'
+                'generate'
             ],
             '/': [
                 '/guide/',
