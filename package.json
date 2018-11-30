@@ -3,5 +3,8 @@
     "dev": "vuepress dev",
     "build": "vuepress build",
     "deploy": "./deploy.sh"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.0.0-alpha.0"
   }
 }

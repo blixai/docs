@@ -3,6 +3,7 @@ module.exports = {
     head: [
       ['link', { rel: 'icon', href: 'logo.png' }]
     ], 
+    plugins: {'@vuepress/google-analytics': { ga: 'UA-44025146-6' } }, 
     description: 'CLI tool to create, automate, and enhance JavaScript applications',
     themeConfig: {
         logo: 'logo.png',
