@@ -59,7 +59,7 @@ blix generate view <name>
 
 
 ## Api Script
-Creates file and Axios functions for a resource. When run this will 
+Creates a file with Axios functions for a resource. When run this will 
 create a file with the name of the resource plus Data.js. So a resource name of user will be userData.js.
 For separation of concerns we provide the ```src/api``` folder for all frontend projects. 
 
@@ -67,17 +67,55 @@ For separation of concerns we provide the ```src/api``` folder for all frontend 
 ```bash
 blix generate api <resource>
 ```
-This creates async await with try/catch routes for:
+This creates async await functions with try/catch routes for:
 ```bash
 GET     /api/v1/resource
 PUT     /api/v1/resource/:id
 DELETE  /api/v1/resource/:id
 POST    /api/v1/resource
 ```
+
+***Functions To Import*** 
+```js
+// from an example of "blix generate api user"
+import { getUser, putUser, deleteUser, postUser } from 'userData'
+```
+
+
 If you don't want to use the /api/v1/ you can quickly edit this in the ```scripts/templates/api.js``` file. 
-These routes perfectly match our backend controller script.
+These routes map with our backend controller script in order to quickly connect client and server in a standardized way.
 
 ## Controller Script
+Creates a file and adds routes to the server's routes. The standard Blix server is has a ```controllers``` folder
+and ```routes.js``` file. 
+
+***Usage***
+```bash
+blix generate controller <resource>
+```
+
+***Routes Generated in routes.js***
+```bash
+GET     /api/v1/resource
+PUT     /api/v1/resource/:id
+DELETE  /api/v1/resource/:id
+POST    /api/v1/resource
+```
+
+***Controller Generated***
+```js
+// from an example of "blix generate controller user"
+// so the file will be server/controllers/user.js
+exports.get = (req, res) => { }
+
+exports.put = (req, res) => { }
+
+exports.deleteUser = (req, res) => { }
+
+exports.post = (req, res) => { }
+```
+The functions inside the controller are already connected in the routes.js file. 
+
 
 ## Model Scripts
 
