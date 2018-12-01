@@ -10,11 +10,32 @@ Expect how Blix scripts work to undergo heavy changes in the future. We may deci
 
 ## react component scripts
 
-### basic react component script
+React component scripts come in several different types depending on the type of project you have.
+What they share in common is the ability to create a stateful or stateless component, inside it's own folder, and always with a css file.
 
-### react router component script
+***Usage***
+```bash
+blix generate component <name>
+```
+You will then be prompted via y/N cli question whether this component is stateful.
+If it's not a functional component is created.
+
+Notes:
+
+* If no name is provided a example of how to use the script will be console logged.
+* If a folder with that name already exists an error will be logged and the script will exit.
+
+### basic react component script
+Creates a folder in ```src``` with the name provided. Inside the folder you'll find a file with the name uppercased and a simple css file with the same name.
+
+### react+router component script
+Creates a folder in ```src/components``` with the name provided. Inside the folder you'll find a file with the name uppercased and a simple css file with the same name.
 
 ### redux component script
+Creates a folder in ```src``` with the name provided. Inside the folder you'll find a file with the name uppercased and a simple css file with the same name as well as a **NameContainer.js** redux container. We prefer to keep our container logic separate from our components. 
+
+### react-router + redux component script
+Creates a folder in ```src/components``` with the name provided. Inside the folder you'll find a file with the name uppercased and a simple css file with the same name as well as a **NameContainer.js** redux container. We prefer to keep our container logic separate from our components. 
 
 ## redux action script
 
