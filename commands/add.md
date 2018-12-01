@@ -1,3 +1,7 @@
+---
+sidebarDepth: 1
+---
+
 # add
 > Improvise. Adapt. Overcome. - U.S. Marines
 
