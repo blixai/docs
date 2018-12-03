@@ -118,9 +118,43 @@ The functions inside the controller are already connected in the routes.js file.
 
 
 ## Model Scripts
+A model script creates a database ORM model file in ```server/models```.
+Currently we have model scripts for [Mongoose](https://mongoosejs.com/) and [Bookshelf](https://bookshelfjs.org/) ORM's. 
+Either script can be run with just a model name and will create a base model file. 
+However, you can also pass in fields with the field  type separated by a colon. 
+If no field type is provided it defaults to type "string". The accepted fields differ by database type and are listed below.
 
-### mongoose model script
+***Basic Usage***
+```bash
+blix generate model <name>
+```
 
-### bookshelf model script
+### Mongoose model script
+In the Mongoose script the field type is capitalized to reflect the Mongoose class types.
+
+**Valid types**: String, Number, Date, Buffer, Boolean, Mixed, ObjectId, Array
+
+***Create Mongoose User Model***
+```bash
+blix generate model User name age:Number isAdmin:Boolean emails:Array
+```
+Creates a file ```server/models/User.js```. 
+```js
+let mongoose = require('mongoose')
+let Schema = mongoose.Schema
+let ObjectId = Schema.ObjectId
+
+let userSchema = new Schema({
+      name: String,
+      age: Number,
+      isAdmin: Boolean,
+      emails: Array
+
+})
+
+module.exports = mongoose.model('User', userSchema)
+```
+
+### Bookshelf model script
 
 ## Creating a Custom Script

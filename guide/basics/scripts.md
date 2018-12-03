@@ -3,7 +3,13 @@
 
 Scripts are designed to make your life easier. They range from the simple: like generating a new component,
 to the advanced: creating an action and reducer, importing the reducer into the rootReducer, and importing the action into a container.
+
+::: tip
 **If you're not sure how a script works simply run it without any arguments and you'll get an error with an example of how to use it and what it does**.
+
+**You can also look up a list of all scripts in the [scripts documentation](/commands/scripts.html)**
+:::
+
 
 ## Running a script
 There are two ways to run a script, via Blix or the package.json. You can find what scripts your project has by checking the scripts inside the package.json.

@@ -1,5 +1,5 @@
 ---
-sidebarDepth: 1
+sidebarDepth: 2
 ---
 
 # new
@@ -33,6 +33,18 @@ We should also note that fullstack projects (where the FE is served by the backe
 
 #### React + React-Router + Redux
 
+### Vue Projects
+
+#### Vue 
+
+#### Vue + Vue-Router
+
+#### Vue + Vuex
+
+#### Vue + Vue-Router + Vuex
 
 ##  Backend
+
+## Datebase
+
 
