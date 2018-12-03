@@ -21,6 +21,9 @@ Now lambda generators. Help automate deployment
 Look into Passport/Firebase/Storyboard support
 
 ## v1.8
+SSR Support
+
+## v1.9
 Add Socket.io + Redis to projects or config with new projects
 
 ## v2.0

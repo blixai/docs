@@ -4,13 +4,13 @@
 Blix is a **command line tool** for Javascript applications. It can be used to create projects from scratch or integrate new features and tools into existing applications. Blix works to provide a pleasant, rapid development experience by leveraging **convention + configuration**. 
 
 ## Blix commands: 
-```
+```bash
   blix new
   blix add
   blix scripts
   blix generate | g
-  blix help
-  blix version | -v
+  blix --help
+  blix #list all options and commands
 ```  
 
 ## Quick Start: Build a new project from scratch:

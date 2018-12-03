@@ -68,3 +68,29 @@ This will serve the index.html which calls the JS file with the routing library 
 
 ## Common Folders
 
+***Scripts***
+
+Blix stores scripts and their templates within a scripts folder in the project.
+```bash
+|── scripts 
+    |── templates 
+```
+
+***Tests***
+
+Tests are typically found in the ```test``` folder with [Cypress](https://www.cypress.io/) tests being a rare exception.
+
+```bash
+|── test 
+    |── unit
+    |── e2e
+```
+
+***Database***
+
+In projects with SQL databases you'll find a db folder.
+
+```bash
+|── db
+    |── migrations 
+```
