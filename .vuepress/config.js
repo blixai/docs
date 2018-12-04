@@ -20,13 +20,17 @@ module.exports = {
                 link: '/guide/'
             },
             {
-              text: 'Commands',
+              text: 'CLI',
               items: [
                 { text: 'new', link: '/commands/new' },
                 { text: 'add', link: '/commands/add' },
                 { text: 'scripts', link: '/commands/scripts' },
                 { text: 'generate', link: '/commands/generate' }
               ]
+            },
+            {
+              text: 'API Reference',
+              link: '/api/'
             },
             {
                 text: 'About',
@@ -39,6 +43,9 @@ module.exports = {
             }
         ],
         sidebar: {
+            '/api/': [
+              ''
+            ],
             '/about/': [
                 '',
                 'team',
