@@ -1,9 +1,9 @@
 # Overview
 > An elegant weapon for a more civilized age. - Obi-Wan Kenobi
 
-Blix is a **command line tool** for Javascript applications. It can be used to create projects from scratch or integrate new features and tools into existing applications. Blix works to provide a pleasant, rapid development experience by leveraging **convention + configuration**. 
+Blix is a **command line tool** and **scripting library** for Javascript applications. It can be used to create projects from scratch or integrate new features and tools into existing applications. Blix works to provide a pleasant, rapid development experience by leveraging **convention + configuration**. 
 
-## Blix commands: 
+## CLI Commands: 
 ```bash
   blix new
   blix add

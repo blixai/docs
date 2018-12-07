@@ -192,6 +192,76 @@ It also will ask to import components (or Redux containers) into the view so you
 blix generate view <name>
 ```
 
+### React-Router Example
+
+React-Router scripts are fairly straightforward. It will create a new stateful or stateless component in ```src/views/```. 
+It will autumatically import the view into the ```src/Router.js``` and insert it's route after which you can navigate to that route using React router links inside the views (although you may need to reload the page to ensure it updated :wink:).
+Components are listed by first level directory inside ```src/components``` and currently are only imported into the new view (but will soon be able to be dropped exactly where you specify inside the new view!).
+
+***Create an About view***
+```bash
+blix generate view about
+
+# ? Please enter the url route to the view: about
+# Is this view stateful (Y/n): y
+# Components:  [ 'Navbar' ]
+# ? Which components should be used by this view: (you can enter more than one at a time, case-sensitive) Navbar
+# Imported Navbar component into src/views/About.js
+ 
+```
+
+Creates a file ```src/views/About.js```
+
+***About.js***
+```{2}js
+import React, { Component } from 'react'
+import Navbar from '../components/Navbar/Navbar'; // notice navbar was imported
+
+class About extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+
+  render () {
+    return (
+      <div>
+        Hello About
+      </div>
+    )
+  }
+}
+
+export default About 
+```
+
+Imports View into Router:
+
+```{5,11,12,13}js
+import React, {Component, Fragment} from 'react';
+import {Route, Switch} from 'react-router-dom';
+import Home from './views/Home';
+
+import About from './views/About'
+class Router extends Component {
+  render() {
+    return (
+      <Fragment>
+        <Switch>
+          <Route exact path='/about' render={(history) => {
+            return <About/>
+          }}/>
+         <Route exact path='/' component={Home} />
+        </Switch>
+      </Fragment>
+    )
+  }
+}
+
+export default Router
+```
+
+
 
 ## Api Script
 Creates a file with Axios functions for a resource. When run this will 
@@ -384,3 +454,5 @@ If you encounter errors we recommend running adding a database via ```blix add``
 
 
 ## Creating a Custom Script
+
+This is currently being refactored

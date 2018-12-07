@@ -10,6 +10,8 @@ Checks if yarn.lock file or package-lock.json file already exists.
 If neither exist it will then attempt to check to see if yarn exists.
 
 ## yarn
+* ``` @async```
+
 If canUseYarn returns successful and a choice hasn't already been made, it prompts the user if they
 want to use yarn and stores the answer.
 
@@ -46,3 +48,7 @@ If a project name exists (store.name) it changes directories to that folder. Fro
 ## installAllPackages
 
 ## insert
+
+## capitalize
+
+## loadFile
