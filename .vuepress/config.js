@@ -6,9 +6,9 @@ module.exports = {
     description: 'CLI tool and scripting library to create, automate, and enhance JavaScript applications',
     themeConfig: {
         logo: 'logo.png',
-        repo: 'blixjs/blix',
+        repo: 'blixai/blix',
         repoLabel: 'Github',
-        docsRepo: 'blixjs/blixjs.com',
+        docsRepo: 'blixai/docs',
         editLinks: true,
         lastUpdated: 'Last Updated',
         editLinkText: 'Edit this page on Github',
